@@ -18,7 +18,7 @@ const HeaderLogo = () => {
 
   React.useEffect(() => {
     setLogo(Constants?.expoConfig?.slug);
-  }, []);
+  }, [Constants?.expoConfig?.slug]);
 
   return (
     <TouchableOpacity
@@ -32,7 +32,7 @@ const HeaderLogo = () => {
         style={{
           width: 100, // Adjusted size
           height: 100,
-          resizeMode: "contain",
+          resizeMode: "cover",
           borderRadius: 1000,
         }}
       />
@@ -41,12 +41,6 @@ const HeaderLogo = () => {
 };
 
 export default function App() {
-  const [logo, setLogo] = React.useState(null);
-
-  React.useEffect(() => {
-    setLogo(Constants?.expoConfig?.slug);
-  }, []);
-
   return (
     <NavigationContainer>
       <HeaderLogo />
