@@ -1,20 +1,74 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import * as React from "react";
+import { StatusBar } from "expo-status-bar";
+import { Text, View, Image } from "react-native";
+import { NavigationContainer } from "@react-navigation/native";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import { Splashlogos } from "./AppIcons/index";
+import Constants from "expo-constants";
+import HomeScreen from "./components/pages/HomeScreen";
+import GeneralProducts from "./components/pages/GeneralProducts";
+import Cart from "./components/pages/Cart";
+import { Ionicons } from "@expo/vector-icons";
+
+const Tab = createBottomTabNavigator();
 
 export default function App() {
+  const [logo, setLogo] = React.useState(null);
+
+  React.useEffect(() => {
+    setLogo(Constants?.expoConfig?.slug);
+  }, []);
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+    <NavigationContainer>
+      <View style={styles.header}>
+        <Image
+          source={Splashlogos[logo]}
+          style={{
+            width: 100,
+            height: 100,
+            resizeMode: "cover",
+            borderRadius: 1000,
+          }}
+        />
+      </View>
+
+      <Tab.Navigator
+        screenOptions={({ route }) => ({
+          headerShown: false,
+          tabBarIcon: ({ focused, color, size }) => {
+            let iconName;
+
+            if (route.name === "Home") {
+              iconName = focused ? "home" : "home-outline";
+            } else if (route.name === "Products") {
+              iconName = focused ? "list" : "list-outline";
+            } else if (route.name === "Cart") {
+              iconName = focused ? "cart" : "cart-outline"; // Add icon for Cart tab
+            }
+
+            return <Ionicons name={iconName} size={size} color={color} />;
+          },
+        })}
+      >
+        <Tab.Screen name="Home" component={HomeScreen} />
+        <Tab.Screen name="Products" component={GeneralProducts} />
+        <Tab.Screen name="Cart" component={Cart} />
+      </Tab.Navigator>
       <StatusBar style="auto" />
-    </View>
+    </NavigationContainer>
   );
 }
 
-const styles = StyleSheet.create({
+const styles = {
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: "center",
+    justifyContent: "center",
   },
-});
+  header: {
+    paddingTop: 30,
+    // alignItems: "center",
+    // justifyContent: "center",
+  },
+};
