@@ -32,7 +32,7 @@ const HeaderLogo = () => {
         style={{
           width: 100, // Adjusted size
           height: 100,
-          resizeMode: "cover",
+          resizeMode: "contain",
           borderRadius: 1000,
         }}
       />
