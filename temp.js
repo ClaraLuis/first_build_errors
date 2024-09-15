@@ -748,5 +748,184 @@ export const data = {
       background: require("./travelagency/bg.jpeg"),
       callToAction: "Book Your Adventure",
     },
+    {
+      type: "Fish Market",
+      slideShow: [
+        {
+          id: 1,
+          image: require("./fishmarket/slideshow1.jpeg"),
+        },
+        {
+          id: 2,
+          image: require("./fishmarket/slideshow2.jpeg"),
+        },
+      ],
+      products: [
+        {
+          id: "1",
+          image: require("./fishmarket/product1.jpg"),
+          title_en: "Fresh Atlantic Salmon",
+          title_ar: "سمك السلمون الأطلسي الطازج",
+          price: "20",
+          sale_price: "18",
+          description:
+            "Premium Atlantic salmon, known for its rich flavor and high-quality omega-3 content, sold by the pound.",
+        },
+        {
+          id: "2",
+          image: require("./fishmarket/product2.jpeg"),
+          title_en: "Wild-Caught Yellowfin Tuna",
+          title_ar: "تونة الزعنفة الصفراء الطازجة",
+          price: "25",
+          sale_price: "22",
+          description:
+            "Sustainably sourced Yellowfin tuna, perfect for sashimi or grilling, available fresh by the pound.",
+        },
+        {
+          id: "3",
+          image: require("./fishmarket/product3.jpeg"),
+          title_en: "Jumbo Tiger Shrimp",
+          title_ar: "روبيان النمر الجامبو",
+          price: "15",
+          sale_price: "13",
+          description:
+            "Large, juicy Tiger shrimp, ideal for grilling or adding to seafood dishes, available fresh or frozen.",
+        },
+        {
+          id: "4",
+          image: require("./fishmarket/product4.jpeg"),
+          title_en: "Wild Pacific Cod",
+          title_ar: "سمك القد الباسيفيكي البري",
+          price: "18",
+          sale_price: "16",
+          description:
+            "Flaky and mild-flavored Pacific cod, perfect for frying or baking, sold by the pound.",
+        },
+        {
+          id: "5",
+          image: require("./fishmarket/product5.jpeg"),
+          title_en: "Live Maine Lobster",
+          title_ar: "جراد البحر من ولاية مين",
+          price: "40",
+          sale_price: "35",
+          description:
+            "Freshly caught live lobsters from Maine, known for their sweet, tender meat, sold by the piece.",
+        },
+        {
+          id: "6",
+          image: require("./fishmarket/product6.jpeg"),
+          title_en: "Fresh Black Mussels",
+          title_ar: "بلح البحر الأسود الطازج",
+          price: "10",
+          sale_price: "9",
+          description:
+            "Delicious black mussels, perfect for steaming or adding to seafood pasta, sold by the pound.",
+        },
+      ],
+      collections: [
+        {
+          id: "1",
+          image: require("./fishmarket/collection1.jpeg"),
+          title_en: "Shellfish Selection",
+        },
+        {
+          id: "2",
+          image: require("./fishmarket/collection2.jpeg"),
+          title_en: "Premium Fish Fillets",
+        },
+      ],
+      background: require("./fishmarket/bg.jpg"),
+      callToAction: "Add to cart",
+    },
+
+    {
+      type: "Healthy",
+      slideShow: [
+        {
+          id: 1,
+          image: require("./healthyfood/slideshow1.jpeg"),
+        },
+        {
+          id: 2,
+          image: require("./healthyfood/slideshow2.jpeg"),
+        },
+      ],
+      products: [
+        {
+          id: "1",
+          image: require("./healthyfood/product1.jpeg"),
+          title_en: "Organic Quinoa",
+          title_ar: "كينوا عضوية",
+          price: "12",
+          sale_price: "10",
+          description:
+            "High-protein, gluten-free organic quinoa, perfect for salads and side dishes, available in a 1kg pack.",
+        },
+        {
+          id: "2",
+          image: require("./healthyfood/product2.jpeg"),
+          title_en: "Chia Seeds",
+          title_ar: "بذور الشيا",
+          price: "8",
+          sale_price: "7",
+          description:
+            "Nutrient-dense chia seeds, great for smoothies, oatmeal, and baking, packed with fiber and omega-3s.",
+        },
+        {
+          id: "3",
+          image: require("./healthyfood/product3.jpeg"),
+          title_en: "Almond Butter",
+          title_ar: "زبدة اللوز",
+          price: "15",
+          sale_price: "13",
+          description:
+            "Creamy, all-natural almond butter made from roasted almonds, no added sugar or preservatives.",
+        },
+        {
+          id: "4",
+          image: require("./healthyfood/product4.jpeg"),
+          title_en: "Organic Coconut Oil",
+          title_ar: "زيت جوز الهند العضوي",
+          price: "10",
+          sale_price: "9",
+          description:
+            "Cold-pressed organic coconut oil, perfect for cooking, skincare, and hair care, available in a 500ml jar.",
+        },
+        {
+          id: "5",
+          image: require("./healthyfood/product5.jpeg"),
+          title_en: "Kale Chips",
+          title_ar: "رقائق الكالي",
+          price: "5",
+          sale_price: "4",
+          description:
+            "Crispy, baked kale chips seasoned with sea salt, a healthy and delicious snack alternative.",
+        },
+        {
+          id: "6",
+          image: require("./healthyfood/product6.jpeg"),
+          title_en: "Vegan Protein Powder",
+          title_ar: "مسحوق البروتين النباتي",
+          price: "25",
+          sale_price: "22",
+          description:
+            "Plant-based protein powder made from peas, rice, and hemp, perfect for post-workout shakes and smoothies.",
+        },
+      ],
+      collections: [
+        {
+          id: "1",
+          image: require("./healthyfood/collection1.jpeg"),
+          title_en: "Superfoods",
+        },
+        {
+          id: "2",
+          image: require("./healthyfood/collection2.jpeg"),
+          title_en: "Organic Snacks",
+        },
+      ],
+      background: require("./healthyfood/bg.jpeg"),
+      callToAction: "Add to cart",
+    },
   ],
 };
