@@ -81,7 +81,9 @@ const ProductInfoModal = ({ visible, onClose, item }) => {
           <Ionicons name="close" size={30} color="black" />
         </TouchableOpacity>
         <ScrollView contentContainerStyle={styles.scrollContainer}>
-          <Image source={item.image} style={styles.image} />
+          <TouchableOpacity onPress={onClose}>
+            <Image source={item.image} style={styles.image} />
+          </TouchableOpacity>
           <View style={styles.infoContainer}>
             <Text style={styles.title}>{item.title_en}</Text>
             <Text style={styles.price}>{item.sale_price} EGP</Text>

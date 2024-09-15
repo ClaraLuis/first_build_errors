@@ -1,7 +1,7 @@
 import * as React from "react";
 import { StatusBar } from "expo-status-bar";
-import { Text, View, Image } from "react-native";
-import { NavigationContainer } from "@react-navigation/native";
+import { Text, View, Image, TouchableOpacity } from "react-native";
+import { NavigationContainer, useNavigation } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Splashlogos } from "./AppIcons/index";
 import Constants from "expo-constants";
@@ -12,6 +12,34 @@ import { Ionicons } from "@expo/vector-icons";
 
 const Tab = createBottomTabNavigator();
 
+const HeaderLogo = () => {
+  const [logo, setLogo] = React.useState(null);
+  const navigation = useNavigation();
+
+  React.useEffect(() => {
+    setLogo(Constants?.expoConfig?.slug);
+  }, []);
+
+  return (
+    <TouchableOpacity
+      onPress={() => {
+        navigation.navigate("Products");
+      }}
+      style={styles.header}
+    >
+      <Image
+        source={Splashlogos[logo]}
+        style={{
+          width: 100, // Adjusted size
+          height: 100,
+          resizeMode: "cover",
+          borderRadius: 1000,
+        }}
+      />
+    </TouchableOpacity>
+  );
+};
+
 export default function App() {
   const [logo, setLogo] = React.useState(null);
 
@@ -21,18 +49,7 @@ export default function App() {
 
   return (
     <NavigationContainer>
-      <View style={styles.header}>
-        <Image
-          source={Splashlogos[logo]}
-          style={{
-            width: 100,
-            height: 100,
-            resizeMode: "cover",
-            borderRadius: 1000,
-          }}
-        />
-      </View>
-
+      <HeaderLogo />
       <Tab.Navigator
         screenOptions={({ route }) => ({
           headerShown: false,
@@ -68,6 +85,7 @@ const styles = {
   },
   header: {
     paddingTop: 30,
+
     // alignItems: "center",
     // justifyContent: "center",
   },

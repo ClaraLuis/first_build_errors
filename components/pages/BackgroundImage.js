@@ -23,7 +23,7 @@ const BackgroundImage = ({ image, onPress }) => {
         if (onPress) {
           onPress();
         } else {
-          navigation.navigate("AllProducts");
+          navigation.navigate("Products");
         }
       }}
     >

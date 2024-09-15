@@ -18,7 +18,7 @@ const Carousel = ({
   images,
   autoScroll = true,
   interval = 3000,
-  destination = "AllProducts",
+  destination = "Products",
 }) => {
   const navigation = useNavigation();
   const flatListRef = useRef(null);
