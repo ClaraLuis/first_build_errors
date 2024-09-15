@@ -302,5 +302,451 @@ export const data = {
       background: require("./supermarket/bg.jpg"),
       callToAction: "Add to cart",
     },
+
+    {
+      type: "Food Trading",
+      slideShow: [
+        {
+          id: 1,
+          image: require("./foodtrading/slideshow1.jpg"),
+        },
+        {
+          id: 2,
+          image: require("./foodtrading/slideshow2.jpeg"),
+        },
+      ],
+      products: [
+        {
+          id: "1",
+          image: require("./foodtrading/product1.jpeg"),
+          title_en: "Premium Coffee Beans",
+          title_ar: "حبوب قهوة ممتازة",
+          price: "15.00",
+          sale_price: "12.00",
+          description:
+            "Freshly roasted premium coffee beans with a rich, aromatic flavor.",
+        },
+        {
+          id: "2",
+          image: require("./foodtrading/product2.jpeg"),
+          title_en: "Organic Green Tea",
+          title_ar: "شاي أخضر عضوي",
+          price: "10.00",
+          sale_price: "8.00",
+          description:
+            "High-quality organic green tea leaves for a refreshing and healthy drink.",
+        },
+        {
+          id: "3",
+          image: require("./foodtrading/product3.jpg"),
+          title_en: "Gourmet Olive Oil",
+          title_ar: "زيت زيتون فاخر",
+          price: "25.00",
+          sale_price: "20.00",
+          description:
+            "Extra virgin olive oil, ideal for cooking and dressings with a smooth, rich taste.",
+        },
+        {
+          id: "4",
+          image: require("./foodtrading/product4.jpeg"),
+          title_en: "Artisan Chocolate Bars",
+          title_ar: "ألواح شوكولاتة فاخرة",
+          price: "5.00",
+          sale_price: "4.00",
+          description:
+            "Delicious artisan chocolate bars made from the finest cocoa beans.",
+        },
+        {
+          id: "5",
+          image: require("./foodtrading/product5.jpg"),
+          title_en: "Handcrafted Jam",
+          title_ar: "مربى مصنوع يدويًا",
+          price: "7.00",
+          sale_price: "6.00",
+          description:
+            "Sweet and fruity handcrafted jam, perfect for spreading on toast or using in recipes.",
+        },
+        {
+          id: "6",
+          image: require("./foodtrading/product6.jpg"),
+          title_en: "Spicy Pickles",
+          title_ar: "مخللات حارة",
+          price: "8.00",
+          sale_price: "6.50",
+          description:
+            "Crunchy and flavorful spicy pickles, a great addition to any meal or snack.",
+        },
+      ],
+      collections: [
+        {
+          id: "1",
+          image: require("./foodtrading/collection1.jpeg"),
+          title_en: "International Delicacies",
+        },
+        {
+          id: "2",
+          image: require("./foodtrading/collection2.jpeg"),
+          title_en: "Healthy Snacks",
+        },
+      ],
+      background: require("./foodtrading/bg.jpeg"),
+      callToAction: "Order Now",
+    },
+
+    {
+      type: "Supermarket2",
+      slideShow: [
+        {
+          id: 1,
+          image: require("./supermarket2/slideshow1.jpg"),
+        },
+        {
+          id: 2,
+          image: require("./supermarket2/slideshow2.jpg"),
+        },
+      ],
+      products: [
+        {
+          id: "1",
+          image: require("./supermarket2/product1.jpg"),
+          title_en: "Avocado",
+          title_ar: "أفوكادو",
+          price: "2.50",
+          sale_price: "2.00",
+          description:
+            "Ripe and creamy avocados, ideal for salads and guacamole.",
+        },
+        {
+          id: "2",
+          image: require("./supermarket2/product2.jpg"),
+          title_en: "Brown Rice",
+          title_ar: "أرز بني",
+          price: "4.00",
+          sale_price: "3.50",
+          description: "Nutritious brown rice, a perfect addition to any meal.",
+        },
+        {
+          id: "3",
+          image: require("./supermarket2/product3.jpg"),
+          title_en: "Chicken Breasts",
+          title_ar: "صدر دجاج",
+          price: "5.50",
+          sale_price: "5.00",
+          description:
+            "Tender and juicy chicken breasts, perfect for grilling or baking.",
+        },
+        {
+          id: "4",
+          image: require("./supermarket2/product4.jpg"),
+          title_en: "Greek Yogurt",
+          title_ar: "زبادي يوناني",
+          price: "3.00",
+          sale_price: "2.70",
+          description:
+            "Creamy Greek yogurt, high in protein and great for breakfast.",
+        },
+        {
+          id: "5",
+          image: require("./supermarket2/product5.jpg"),
+          title_en: "Granola Bars",
+          title_ar: "ألواح جرانولا",
+          price: "1.50",
+          sale_price: "1.30",
+          description:
+            "Healthy granola bars, perfect for a quick snack on the go.",
+        },
+        {
+          id: "6",
+          image: require("./supermarket2/product6.jpeg"),
+          title_en: "Orange Juice",
+          title_ar: "عصير برتقال",
+          price: "3.50",
+          sale_price: "3.20",
+          description: "Freshly squeezed orange juice, packed with vitamins.",
+        },
+      ],
+      collections: [
+        {
+          id: "1",
+          image: require("./supermarket2/collection1.jpeg"),
+          title_en: "Healthy Choices",
+        },
+        {
+          id: "2",
+          image: require("./supermarket2/collection2.jpeg"),
+          title_en: "Family Favorites",
+        },
+      ],
+      background: require("./supermarket2/bg.jpeg"),
+      callToAction: "Add to cart",
+    },
+
+    {
+      type: "Lighting System",
+      slideShow: [
+        {
+          id: 1,
+          image: require("./lightingsystem/slideshow1.jpg"),
+        },
+        {
+          id: 2,
+          image: require("./lightingsystem/slideshow2.jpeg"),
+        },
+      ],
+      products: [
+        {
+          id: "1",
+          image: require("./lightingsystem/product1.jpg"),
+          title_en: "Modern LED Ceiling Light",
+          title_ar: "إضاءة سقف LED عصرية",
+          price: "120",
+          sale_price: "100",
+          description:
+            "A sleek and energy-efficient LED ceiling light for modern interiors.",
+        },
+        {
+          id: "2",
+          image: require("./lightingsystem/product2.jpeg"),
+          title_en: "Smart RGB Floor Lamp",
+          title_ar: "مصباح أرضي ذكي RGB",
+          price: "150",
+          sale_price: "130",
+          description:
+            "A smart floor lamp with adjustable RGB lighting for a customizable ambiance.",
+        },
+        {
+          id: "3",
+          image: require("./lightingsystem/product3.jpg"),
+          title_en: "Vintage Pendant Light",
+          title_ar: "إضاءة معلقة كلاسيكية",
+          price: "80",
+          sale_price: "70",
+          description:
+            "A vintage-style pendant light that adds a touch of elegance to any room.",
+        },
+        {
+          id: "4",
+          image: require("./lightingsystem/product4.jpg"),
+          title_en: "Outdoor Solar Wall Light",
+          title_ar: "إضاءة جدارية خارجية تعمل بالطاقة الشمسية",
+          price: "50",
+          sale_price: "40",
+          description:
+            "An eco-friendly outdoor wall light powered by solar energy, perfect for pathways and gardens.",
+        },
+        {
+          id: "5",
+          image: require("./lightingsystem/product5.jpeg"),
+          title_en: "Crystal Chandelier",
+          title_ar: "ثريا كريستال",
+          price: "300",
+          sale_price: "250",
+          description:
+            "A luxurious crystal chandelier that brings sophistication and grandeur to any space.",
+        },
+        {
+          id: "6",
+          image: require("./lightingsystem/product6.jpg"),
+          title_en: "Adjustable Desk Lamp",
+          title_ar: "مصباح مكتب قابل للتعديل",
+          price: "40",
+          sale_price: "35",
+          description:
+            "A flexible and adjustable desk lamp ideal for workspaces and reading.",
+        },
+      ],
+      collections: [
+        {
+          id: "1",
+          image: require("./lightingsystem/collection1.jpeg"),
+          title_en: "Luxury Chandeliers",
+        },
+        {
+          id: "2",
+          image: require("./lightingsystem/collection2.jpeg"),
+          title_en: "Smart Lighting Systems",
+        },
+      ],
+      background: require("./lightingsystem/bg.jpeg"),
+      callToAction: "Add to cart",
+    },
+    {
+      type: "Health Testing Lab",
+      slideShow: [
+        {
+          id: 1,
+          image: require("./healthtestinglab/slideshow1.jpeg"),
+        },
+        {
+          id: 2,
+          image: require("./healthtestinglab/slideshow2.jpeg"),
+        },
+      ],
+      products: [
+        {
+          id: "1",
+          image: require("./healthtestinglab/service1.jpeg"),
+          title_en: "Comprehensive Blood Test",
+          title_ar: "اختبار الدم الشامل",
+          price: "150",
+          sale_price: "120",
+          description:
+            "A thorough blood test to assess your overall health and detect any potential issues.",
+        },
+        {
+          id: "2",
+          image: require("./healthtestinglab/service2.jpeg"),
+          title_en: "Cholesterol Screening",
+          title_ar: "فحص الكوليسترول",
+          price: "80",
+          sale_price: "60",
+          description:
+            "A cholesterol test to measure levels of HDL, LDL, and triglycerides.",
+        },
+        {
+          id: "3",
+          image: require("./healthtestinglab/service3.jpeg"),
+          title_en: "DNA Genetic Testing",
+          title_ar: "اختبار الحمض النووي الجيني",
+          price: "300",
+          sale_price: "250",
+          description:
+            "Analyze your genetic makeup to assess health risks and ancestry information.",
+        },
+        {
+          id: "4",
+          image: require("./healthtestinglab/service4.jpeg"),
+          title_en: "COVID-19 PCR Test",
+          title_ar: "اختبار تفاعل البوليميراز المتسلسل لكوفيد-19",
+          price: "100",
+          sale_price: "80",
+          description:
+            "PCR test for COVID-19, providing fast and reliable results.",
+        },
+        {
+          id: "5",
+          image: require("./healthtestinglab/service5.jpeg"),
+          title_en: "Allergy Test",
+          title_ar: "اختبار الحساسية",
+          price: "200",
+          sale_price: "160",
+          description:
+            "Detect your body's allergic reactions to a wide range of allergens.",
+        },
+        {
+          id: "6",
+          image: require("./healthtestinglab/service6.jpeg"),
+          title_en: "Hormonal Panel Test",
+          title_ar: "اختبار الهرمونات",
+          price: "250",
+          sale_price: "200",
+          description:
+            "Check your hormone levels to detect imbalances that may affect your health.",
+        },
+      ],
+      collections: [
+        {
+          id: "1",
+          image: require("./healthtestinglab/collection1.jpg"),
+          title_en: "Routine Health Checkups",
+        },
+        {
+          id: "2",
+          image: require("./healthtestinglab/collection2.jpeg"),
+          title_en: "Specialized Diagnostic Tests",
+        },
+      ],
+      background: require("./healthtestinglab/bg.jpeg"),
+      callToAction: "Book a Test",
+    },
+    {
+      type: "Travel Agency",
+      slideShow: [
+        {
+          id: 1,
+          image: require("./travelagency/slideshow1.jpeg"),
+        },
+        {
+          id: 2,
+          image: require("./travelagency/slideshow2.jpeg"),
+        },
+      ],
+      products: [
+        {
+          id: "1",
+          image: require("./travelagency/package1.jpeg"),
+          title_en: "Luxury Maldives Getaway",
+          title_ar: "عطلة فاخرة في جزر المالديف",
+          price: "5000",
+          sale_price: "4500",
+          description:
+            "Experience a 7-day luxury escape to the Maldives, including overwater villas and exclusive beach access.",
+        },
+        {
+          id: "2",
+          image: require("./travelagency/package2.jpeg"),
+          title_en: "European Highlights Tour",
+          title_ar: "جولة معالم أوروبا",
+          price: "4000",
+          sale_price: "3500",
+          description:
+            "Explore the best of Europe with a 10-day guided tour across Paris, Rome, and Barcelona.",
+        },
+        {
+          id: "3",
+          image: require("./travelagency/package3.jpeg"),
+          title_en: "African Safari Adventure",
+          title_ar: "مغامرة سفاري في أفريقيا",
+          price: "3000",
+          sale_price: "2700",
+          description:
+            "A thrilling 5-day safari adventure through Kenya's national parks, complete with wildlife viewing and cultural experiences.",
+        },
+        {
+          id: "4",
+          image: require("./travelagency/package4.jpeg"),
+          title_en: "Asian Cultural Experience",
+          title_ar: "تجربة ثقافية آسيوية",
+          price: "3500",
+          sale_price: "3200",
+          description:
+            "A 7-day immersive tour of Japan and South Korea, exploring temples, cuisine, and traditions.",
+        },
+        {
+          id: "5",
+          image: require("./travelagency/package5.jpeg"),
+          title_en: "Tropical Caribbean Cruise",
+          title_ar: "رحلة بحرية في الكاريبي",
+          price: "2800",
+          sale_price: "2500",
+          description:
+            "Sail across the Caribbean for 5 days, stopping at beautiful islands like Jamaica and the Bahamas.",
+        },
+        {
+          id: "6",
+          image: require("./travelagency/package6.jpeg"),
+          title_en: "Explore the Wonders of Egypt",
+          title_ar: "اكتشف عجائب مصر",
+          price: "3200",
+          sale_price: "2900",
+          description:
+            "Discover the ancient history of Egypt with a 6-day tour of the Pyramids, Luxor, and Nile River cruise.",
+        },
+      ],
+      collections: [
+        {
+          id: "1",
+          image: require("./travelagency/collection1.jpeg"),
+          title_en: "Family Vacations",
+        },
+        {
+          id: "2",
+          image: require("./travelagency/collection2.jpeg"),
+          title_en: "Romantic Getaways",
+        },
+      ],
+      background: require("./travelagency/bg.jpeg"),
+      callToAction: "Book Your Adventure",
+    },
   ],
 };
