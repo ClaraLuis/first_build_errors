@@ -927,5 +927,98 @@ export const data = {
       background: require("./healthyfood/bg.jpeg"),
       callToAction: "Add to cart",
     },
+    {
+      type: "dental_instruments",
+      slideShow: [
+        {
+          id: 1,
+          image: require("./dental_instruments/slideshow1.jpeg"),
+        },
+        {
+          id: 2,
+          image: require("./dental_instruments/slideshow2.jpeg"),
+        },
+      ],
+      products: [
+        {
+          id: "1",
+          image: require("./dental_instruments/instrument1.jpeg"),
+          images: [
+            {
+              id: "1",
+              image: require("./dental_instruments/instrument1.jpeg"),
+            },
+          ],
+          title_en: "Dental Mirror",
+          title_ar: "مرآة الأسنان",
+          price: "20",
+          sale_price: "15",
+          description:
+            "High-quality dental mirror with an ergonomic handle for accurate visual examination of the oral cavity.",
+        },
+        {
+          id: "2",
+          image: require("./dental_instruments/instrument2.jpeg"),
+          images: [
+            {
+              id: "1",
+              image: require("./dental_instruments/instrument2.jpeg"),
+            },
+          ],
+          title_en: "Dental Probe",
+          title_ar: "مسبار الأسنان",
+          price: "25",
+          sale_price: "20",
+          description:
+            "Durable stainless steel dental probe for detecting cavities and periodontal pockets.",
+        },
+        {
+          id: "3",
+          image: require("./dental_instruments/instrument3.jpeg"),
+          images: [
+            {
+              id: "1",
+              image: require("./dental_instruments/instrument3.jpeg"),
+            },
+          ],
+          title_en: "Extraction Forceps",
+          title_ar: "ملقط خلع الأسنان",
+          price: "100",
+          sale_price: "90",
+          description:
+            "Precision-engineered extraction forceps designed for tooth removal with minimal trauma.",
+        },
+        {
+          id: "4",
+          image: require("./dental_instruments/instrument4.jpeg"),
+          images: [
+            {
+              id: "1",
+              image: require("./dental_instruments/instrument4.jpeg"),
+            },
+          ],
+          title_en: "Scaler",
+          title_ar: "مكشطة الأسنان",
+          price: "30",
+          sale_price: "25",
+          description:
+            "A professional-grade dental scaler for removing plaque and tartar buildup effectively.",
+        },
+      ],
+      collections: [
+        {
+          id: "1",
+          image: require("./dental_instruments/collection1.jpeg"),
+          title_en: "Examination Instruments",
+        },
+        {
+          id: "2",
+          image: require("./dental_instruments/collection2.jpeg"),
+          title_en: "Surgical Instruments",
+        },
+      ],
+      background: require("./dental_instruments/bg.jpeg"),
+      callToAction: "Add to Cart",
+    },
   ],
 };
