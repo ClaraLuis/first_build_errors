@@ -746,7 +746,7 @@ export const data = {
         },
       ],
       background: require("./travelagency/bg.jpeg"),
-      callToAction: "Book Your Adventure",
+      callToAction: "Book Your Trip",
     },
     {
       type: "Fish Market",
