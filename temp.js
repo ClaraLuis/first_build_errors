@@ -1020,5 +1020,98 @@ export const data = {
       background: require("./dental_instruments/bg.jpeg"),
       callToAction: "Add to Cart",
     },
+    {
+      type: "car_services",
+      slideShow: [
+        {
+          id: 1,
+          image: require("./car_services/slideshow1.jpeg"),
+        },
+        {
+          id: 2,
+          image: require("./car_services/slideshow2.jpg"),
+        },
+      ],
+      products: [
+        {
+          id: "1",
+          image: require("./car_services/service1.jpeg"),
+          images: [
+            {
+              id: "1",
+              image: require("./car_services/service1.jpeg"),
+            },
+          ],
+          title_en: "Oil Change",
+          title_ar: "تغيير الزيت",
+          price: "50",
+          sale_price: "40",
+          description:
+            "Quick and efficient oil change service to keep your engine running smoothly.",
+        },
+        {
+          id: "2",
+          image: require("./car_services/service2.jpeg"),
+          images: [
+            {
+              id: "1",
+              image: require("./car_services/service2.jpeg"),
+            },
+          ],
+          title_en: "Tire Replacement",
+          title_ar: "استبدال الإطارات",
+          price: "200",
+          sale_price: "180",
+          description:
+            "Professional tire replacement service using high-quality tires for safety and comfort.",
+        },
+        {
+          id: "3",
+          image: require("./car_services/service3.jpeg"),
+          images: [
+            {
+              id: "1",
+              image: require("./car_services/service3.jpeg"),
+            },
+          ],
+          title_en: "Brake Inspection",
+          title_ar: "فحص الفرامل",
+          price: "30",
+          sale_price: "25",
+          description:
+            "Comprehensive brake inspection to ensure optimal performance and safety.",
+        },
+        {
+          id: "4",
+          image: require("./car_services/service4.jpeg"),
+          images: [
+            {
+              id: "1",
+              image: require("./car_services/service4.jpeg"),
+            },
+          ],
+          title_en: "Battery Replacement",
+          title_ar: "استبدال البطارية",
+          price: "150",
+          sale_price: "130",
+          description:
+            "Fast and reliable battery replacement service for all vehicle types.",
+        },
+      ],
+      collections: [
+        {
+          id: "1",
+          image: require("./car_services/collection1.jpeg"),
+          title_en: "Routine Maintenance",
+        },
+        {
+          id: "2",
+          image: require("./car_services/collection2.jpeg"),
+          title_en: "Repair Services",
+        },
+      ],
+      background: require("./car_services/bg.jpeg"),
+      callToAction: "Book Now",
+    },
   ],
 };
