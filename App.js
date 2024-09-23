@@ -9,6 +9,7 @@ import HomeScreen from "./components/pages/HomeScreen";
 import GeneralProducts from "./components/pages/GeneralProducts";
 import Cart from "./components/pages/Cart";
 import { Ionicons } from "@expo/vector-icons";
+import RunningUpdates from "./RunningUpdates";
 
 const Tab = createBottomTabNavigator();
 
@@ -42,32 +43,36 @@ const HeaderLogo = () => {
 
 export default function App() {
   return (
-    <NavigationContainer>
-      <HeaderLogo />
-      <Tab.Navigator
-        screenOptions={({ route }) => ({
-          headerShown: false,
-          tabBarIcon: ({ focused, color, size }) => {
-            let iconName;
+    <>
+      <RunningUpdates />
 
-            if (route.name === "Home") {
-              iconName = focused ? "home" : "home-outline";
-            } else if (route.name === "Products") {
-              iconName = focused ? "list" : "list-outline";
-            } else if (route.name === "Cart") {
-              iconName = focused ? "cart" : "cart-outline"; // Add icon for Cart tab
-            }
+      <NavigationContainer>
+        <HeaderLogo />
+        <Tab.Navigator
+          screenOptions={({ route }) => ({
+            headerShown: false,
+            tabBarIcon: ({ focused, color, size }) => {
+              let iconName;
 
-            return <Ionicons name={iconName} size={size} color={color} />;
-          },
-        })}
-      >
-        <Tab.Screen name="Home" component={HomeScreen} />
-        <Tab.Screen name="Products" component={GeneralProducts} />
-        <Tab.Screen name="Cart" component={Cart} />
-      </Tab.Navigator>
-      <StatusBar style="auto" />
-    </NavigationContainer>
+              if (route.name === "Home") {
+                iconName = focused ? "home" : "home-outline";
+              } else if (route.name === "Products") {
+                iconName = focused ? "list" : "list-outline";
+              } else if (route.name === "Cart") {
+                iconName = focused ? "cart" : "cart-outline"; // Add icon for Cart tab
+              }
+
+              return <Ionicons name={iconName} size={size} color={color} />;
+            },
+          })}
+        >
+          <Tab.Screen name="Home" component={HomeScreen} />
+          <Tab.Screen name="Products" component={GeneralProducts} />
+          <Tab.Screen name="Cart" component={Cart} />
+        </Tab.Navigator>
+        <StatusBar style="auto" />
+      </NavigationContainer>
+    </>
   );
 }
 
