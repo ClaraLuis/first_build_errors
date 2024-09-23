@@ -128,7 +128,7 @@ const Cart = () => {
         {loading ? (
           <ActivityIndicator size="small" color="#fff" />
         ) : (
-          <Text style={styles.checkoutButtonText}>Checkout</Text>
+          <Text style={styles.checkoutButtonText}>Checkout now</Text>
         )}
       </TouchableOpacity>
     </ScrollView>
