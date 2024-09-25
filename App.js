@@ -3,6 +3,7 @@ import { StatusBar } from "expo-status-bar";
 import { Text, View, Image, TouchableOpacity } from "react-native";
 import { NavigationContainer, useNavigation } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import { createStackNavigator } from "@react-navigation/stack";
 import { Splashlogos } from "./AppIcons/index";
 import Constants from "expo-constants";
 import HomeScreen from "./components/pages/HomeScreen";
@@ -12,6 +13,7 @@ import { Ionicons } from "@expo/vector-icons";
 import RunningUpdates from "./RunningUpdates";
 
 const Tab = createBottomTabNavigator();
+const Stack = createStackNavigator(); // Create StackNavigator
 
 const HeaderLogo = () => {
   const [logo, setLogo] = React.useState(null);
@@ -41,6 +43,28 @@ const HeaderLogo = () => {
   );
 };
 
+const TabNavigator = () => {
+  return (
+    <Tab.Navigator
+      screenOptions={({ route }) => ({
+        headerShown: false,
+        tabBarIcon: ({ focused, color, size }) => {
+          let iconName;
+          if (route.name === "Home") {
+            iconName = focused ? "home" : "home-outline";
+          } else if (route.name === "Products") {
+            iconName = focused ? "list" : "list-outline";
+          }
+          return <Ionicons name={iconName} size={size} color={color} />;
+        },
+      })}
+    >
+      <Tab.Screen name="Home" component={HomeScreen} />
+      <Tab.Screen name="Products" component={GeneralProducts} />
+    </Tab.Navigator>
+  );
+};
+
 export default function App() {
   return (
     <>
@@ -48,28 +72,19 @@ export default function App() {
 
       <NavigationContainer>
         <HeaderLogo />
-        <Tab.Navigator
-          screenOptions={({ route }) => ({
-            headerShown: false,
-            tabBarIcon: ({ focused, color, size }) => {
-              let iconName;
 
-              if (route.name === "Home") {
-                iconName = focused ? "home" : "home-outline";
-              } else if (route.name === "Products") {
-                iconName = focused ? "list" : "list-outline";
-              } else if (route.name === "Cart") {
-                iconName = focused ? "cart" : "cart-outline"; // Add icon for Cart tab
-              }
-
-              return <Ionicons name={iconName} size={size} color={color} />;
-            },
-          })}
-        >
-          <Tab.Screen name="Home" component={HomeScreen} />
-          <Tab.Screen name="Products" component={GeneralProducts} />
-          <Tab.Screen name="Cart" component={Cart} />
-        </Tab.Navigator>
+        <Stack.Navigator>
+          <Stack.Screen
+            name="MainTabs"
+            component={TabNavigator}
+            options={{ headerShown: false }}
+          />
+          <Stack.Screen
+            name="Cart"
+            component={Cart}
+            options={{ headerShown: false }}
+          />
+        </Stack.Navigator>
         <StatusBar style="auto" />
       </NavigationContainer>
     </>
@@ -84,8 +99,5 @@ const styles = {
   },
   header: {
     paddingTop: 30,
-
-    // alignItems: "center",
-    // justifyContent: "center",
   },
 };

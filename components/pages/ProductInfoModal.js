@@ -14,8 +14,11 @@ import { Ionicons } from "@expo/vector-icons"; // Make sure to install this pack
 import AsyncStorage from "@react-native-async-storage/async-storage"; // Import AsyncStorage
 import appConfig from "../../app.json";
 import { data } from "../../temp";
+import { useNavigation } from "@react-navigation/native";
 
 const ProductInfoModal = ({ visible, onClose, item }) => {
+  const navigation = useNavigation();
+
   const templateType = appConfig.expo.extra.te;
 
   const selectedTemplate = data.templates.find(
@@ -60,8 +63,9 @@ const ProductInfoModal = ({ visible, onClose, item }) => {
 
       // Save updated cart back to AsyncStorage
       await AsyncStorage.setItem("cart", JSON.stringify(cartItems));
+      navigation.navigate("Cart");
 
-      Alert.alert("Success", `Added ${quantity} ${item.title_en} to cart.`);
+      // Alert.alert("Success", `Added ${quantity} ${item.title_en} to cart.`);
       onClose(); // Close the modal after adding to cart
     } catch (error) {
       Alert.alert("Error", "Failed to add item to cart");
